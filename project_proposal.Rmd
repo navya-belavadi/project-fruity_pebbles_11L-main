@@ -1,0 +1,77 @@
+---
+title: "Flying, Sports, Thanksgiving Project Proposal for Fruity Pebbles lab 11L"
+subtitle: ""
+author: "Fruity Pebbles 11L - Catherine Liu, Navya Belavadi, Mahish Kewalramani"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment = NA, 
+                      message = FALSE, warning = FALSE,
+                      fig.height = 6, fig.width = 9, fig.align = "center")
+```
+
+```{r load_packages}
+library(tidyverse)
+library(haven)
+```
+
+```{r load_data}
+sports_donations <- read.csv("Data/sports-political-donations.csv")
+
+flying <- read.csv("Data/flying-etiquette.csv")
+
+thanksgiving <- read.csv("Data/thanksgiving-2015-poll-data.csv")
+```
+## Data Set #1: Flying Etiquiette
+This data was collected through a SurveyMonkey poll in August of 2014. Some 
+of the relevant variables include age and height of the flier, whether they 
+recline their seat and other opinions on the action like whether they would
+eliminate it outright or the rudeness of it, and their perspective on whether 
+a certain set of actions is rude to do on a plane or not. Another replant 
+variable is whether the flier has kids under the age of 18. Our research topic 
+looks into the relationship between the age of a flier and and if they have kids
+under 18, and whether or not they think it is rude to bring unruly children on a
+plane. What impact does age of a flier and whether or not they have children 
+under 18 have on their opinion on whether it is rude to knowingly bring unruly 
+children on a flight. An older flier with kids under 18 is more likely to think 
+it is not rude to knowingly bring unruly children on a plane than younger fliers
+without kids or with kids above the age of 18.
+
+## Data Set #2: Sports Political Donations
+This data comes from the story "Inside The Political Donation History Of Wealthy
+Sports Owners", and contains every confirmed donation from all sports owners 
+from 2016 onwards. Some relevant variables includes the league that the money is
+coming from, the sport that the money is coming from, who the money is coming 
+from, where the money is going to (as in which party), what years election the 
+money is going to, and how much money is being donated. Our research topic will 
+look into which leagues donate the most to which party and how the money has 
+changed between election years (2016, 2018, 2020). This will be done through 
+hypothesis testing and just general viewing of all the data. How has the amount 
+of money being donated to political campaigns changed across the three election 
+cycles for each individual sport? Given that sports stars influence in politics 
+has grown over the years (E.x. Kapernick, BLM movement in sports) I think that
+the amount of money will have definitely increased between 2016 and 2020. The 
+2018 cycle will have less donations because it is not a presidential election.
+
+## Data Set #3: Thanksgiving
+This is the data behind the story "Here's What Your Part of America Eats On 
+Thanksgiving," which was gathered using a Survey Monkey poll from Nov 17, 2015. 
+Variables range from what is served for each dish (main, side, stuffing,
+sauce, etc), and various other common American thanksgiving traditions. Other 
+relevant variables included age, gender, household income, and US region. 
+Our research topic will examine the link between household income with Black
+Friday shopping habits in each categorical region (Urban, Suburban, Rural). 
+How does the total combined income that all members of ones household earned in 
+the past year impact whether or not an individual will go Black Friday shopping
+on Thanksgiving in each region -- Urban, Suburban, or Rural?
+Our guess is that as household income increases to a certain extent, an 
+individual is more likely to go Black Friday shopping on Thanksgiving, with the 
+exception being that extremely wealthy are less likely to go. And, as you 
+observe from rural to suburban to urban, we predict that the likelihood of a 
+resident going Black Friday shopping will increase. The reasoning is that as 
+household income increases, that individual will most likely have the means to 
+go Black Friday shopping, but we also take into consideration that the top 
+ranked household income people might not require sales to purchase. 
+Geographically speaking, there should be more stores in urban areas than rural 
+and suburban areas so the increase we predicted should make sense.  
